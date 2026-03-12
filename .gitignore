@@ -1,0 +1,40 @@
+# ============================================================
+#  .gitignore  –  LaTeX auxiliary files
+# ============================================================
+
+# Compilation artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# Table of contents / lists
+*.toc
+*.lof
+*.lot
+*.loa
+
+# Bibliography
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# Beamer specific
+*.nav
+*.snm
+*.vrb
+
+# Misc
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.ist
+
+# Output PDF (optionnel – à toi de décider)
+# .pdf

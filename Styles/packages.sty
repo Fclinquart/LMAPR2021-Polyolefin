@@ -1,0 +1,76 @@
+% ============================================================
+%  packages.sty  –  François Clinquart  –  Master Thesis 2026
+%  All package imports for the UCLouvain Beamer presentation
+% ============================================================
+
+\ProvidesPackage{packages}
+
+% --- Encoding & Language ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,english]{babel}
+
+% --- Fonts ---
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Math ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}           % bold math
+
+% --- Science & Units ---
+\usepackage{siunitx}
+\sisetup{
+  detect-all,
+  locale = FR,
+  per-mode = symbol
+}
+
+% --- Chemistry ---
+\usepackage[version=4]{mhchem}
+
+% --- Graphics & Figures ---
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc, decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{array}
+
+% --- Colors ---
+\usepackage{xcolor}
+
+% --- Bibliography ---
+\usepackage[backend=biber,
+            style=nature,
+            sorting=none,
+            maxnames=2,
+            doi=false,
+            url=false,
+            isbn=false]{biblatex}
+
+% --- Misc utilities ---
+\usepackage{calc}
+\usepackage{etoolbox}
+\usepackage{appendixnumberbeamer}   % correct slide numbering after \appendix
+
+% --- Hyperlinks (load last) ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = false,
+  pdfauthor  = {François Clinquart},
+  pdftitle   = {Master Thesis Presentation – UCLouvain},
+  pdfsubject = {Carbon Fibre Composites – Recycling \& Characterisation},
+}
+
+% --- captions outside of floats ---
+\usepackage{capt-of}
+
+%---  fancy text colot ---
+\usepackage{xcolor}
