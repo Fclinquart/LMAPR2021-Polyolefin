@@ -37,4 +37,6 @@
 *.ist
 
 # Output PDF (optionnel – à toi de décider)
-# .pdf
+.pdf
+
+build/

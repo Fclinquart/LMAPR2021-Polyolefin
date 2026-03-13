@@ -24,7 +24,7 @@ Institute of Condensed Matter and Nanotechnology - Bio and Soft matter (IMCN/BSM
 
 ### Reactivity of Alcene and polalcene 
     1. Main processing route on Zieger Natta catalyst 
-    2. How to tune the $M_w$, the branching, the steorisomery, the crystallinity and the polydispersity 
+    2. How to tune the $M_w$, the branching, the steoreoregularity the crystallinity and the polydispersity 
     3. Reactivity of polyolefin 
 ## Challenge with the end of life 
     1. Variation of $M_w$ and Polydispersity with mechanical recycling 

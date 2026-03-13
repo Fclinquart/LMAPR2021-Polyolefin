@@ -151,8 +151,8 @@
 % =============================================================
 %  LOGO PATHS  (relative to the compiled .tex file)
 % =============================================================
-\newcommand{\UCLlogopath}{../Styles/UCLouvain_logos/UCLouvain-logo.jpg}
-\newcommand{\EPLlogopath}{../Styles/UCLouvain_logos/EPL-logo.jpg}
+\newcommand{\UCLlogopath}{Styles/UCLouvain_logos/UCLouvain-logo.jpg}
+\newcommand{\EPLlogopath}{Styles/UCLouvain_logos/EPL-logo.jpg}
 \newcommand{\logoheight}{1.0cm}
 
 % =============================================================
