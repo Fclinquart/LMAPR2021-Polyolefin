@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%
+% Section 2         %   
+% date : 17-03-2026 %
+% author : fclinquart
+%%%%%%%%%%%%%%%%%%%%%
+
+%1. Main processing route on Zieger Natta catalyst 
+%2. How to tune the $M_w$, the branching, the steoreoregularity the crystallinity and the polydispersity 
+%3. Reactivity of polyolefin dene 
+
+
+\begin{frame}{Alkene's reactivity due to the $\pi$ bound}
+    \begin{block}{Most reactions of alkenes involve additions to this $\pi bond, forming new single bonds.}
+        \begin{itemize}
+            \item  addition with a nucleophile
+            \item  \textbf{addition with a radical} 
+            \item  Oxydation reaction 
+        \end{itemize}
+    \end{block}
+     \begin{alertblock}{Alkene go polymerize by Chain-reaction Polymerization}
+        \begin{itemize}
+            \item \textbf{Free Radical Polymerisation (FRP)}
+            \item \textbf{Complex coordination polymerization.}
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{FRP : main reaction scheme}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.5\textwidth]{Figures/6_FRP.png}
+        \caption{FRP reaction scheme.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{FRP: Parameters Influencing Stereochemistry}
+
+Most vinyl polymers from free radical polymerization (FRP) exhibit \textbf{atacticity}, a random distribution of asymmetric carbons along the chain, due to the planar $sp^2$ radical center allowing random addition from either face \cite{kozuszek2025, wikipedia2024}.
+
+Key parameters influencing stereoselectivity include:
+\begin{itemize}
+\item \textbf{Temperature}: Lower temperatures favor syndiotacticity via restricted rotation and steric control; high temperatures yield atactic polymers \cite{polycopie, kayik2014}.
+\item \textbf{Solvent polarity}: Polar solvents enhance electrostatic interactions, promoting tactic chains \cite{polycopie, kayik2014}.
+\item \textbf{Monomer substituents}: Bulky R-groups increase syndiotacticity through steric hindrance \cite{polycopie, kayik2014}.
+\item \textbf{pH/electrostatic effects}: In acrylics, higher pH (COO$^-$ form) boosts syndiotacticity \cite{polycopie}.
+\item \textbf{Additives}: Lewis acids/bases or tartrates induce stereocontrol via H-bonding \cite{kayik2014}.
+\end{itemize}
+
+\textbf{PE} is not concerned (no asymmetric carbons, linear structure). \textbf{PP} is strictly atactic in FRP (no stereocontrol possible) \cite{wikipedia2024}.
+
+Secondary reactions (chain transfer) can reactivate dead chains, but minimally affect stereochemistry \cite{kozuszek2025}.
+
+\end{frame}
+
+
+\begin{frame}{radical transfert between two chain lead to long branch}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.5\textwidth]{Figures/7_transfert_1.png}
+        \caption{inter-chain transfert}
+    \end{figure}
+  $\rightarrow$ long branch in PE. 
+\end{frame}
+
+\begin{frame}{radical transfert between one chain lead to short branch}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.4\textwidth]{Figures/8_transfert_2.png}
+        \caption{intra-chain transfert}
+    \end{figure}
+  $\rightarrow$ short branch in PE. 
+\end{frame}
+
+\begin{frame}{Transfert to monomer}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.5\textwidth]{Figures/9_transfert_3.png}
+        \caption{chain neutralisation in PP}
+    \end{figure}
+  $\rightarrow$ High molecular weight PP is not achievable in standard condition.
+\end{frame}
+
+\begin{frame}{FRP : conclusion}
+    \begin{minipage}{0.45\textwidth}
+        \begin{block}{Only LDPE}
+            \begin{itemize}
+                \item High T and high P
+                \item Amourphous $\leftarrow$ a lot a branch of different size 
+                \item PDI = 7-20 
+                \item Application : Soft plastic bag \cite{wikiPEBD}
+            \end{itemize}
+    \end{minipage}
+    \hfill
+     \begin{minipage}{0.45\textwidth}
+        \begin{block}{Only atactic PP}
+            \begin{itemize}
+                \item Application : Adhesive (almost never produce) \cite{ataman}
+            \end{itemize}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}{Complex coordination polymerization : a revolution }
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.5\textwidth]{Figures/global-plastic-production.png}
+        \caption{global plastic production since 1950 \cite{owid-plastic-pollution}.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ziegler Natta catalyst}
+    \begin{greenblock}{catalyst:}
+        \begin{itemize}
+            \item heterogeneous transition metal (Ti)
+            \item organometallic of a metal from (I to III) (Al)
+        \end{itemize}    
+    \end{greenblock}
+    Typically : 
+        \begin{equation}
+            TiCl_4 \text{ or } TiCl_3 + AlR_3
+        \end{equation}
+    with $ R = CH-CH3$ for polyetehylene 
+\end{frame}
+
+\begin{frame}{Major result with the introduction of ZN catalyst}
+    \begin{alertblock}{}
+        \begin{itemize}
+            \item Stereospecific polymerization of PE
+            \item Synthesis of linear PE
+            \item Copolymerization of PP/PE
+        \end{itemize}
+    \end{alertblock}
+    $\rightarrow$ control of stereoregularity/stereochemstry and $M_w$ through terminison reaction. 
+    $\rightarrow$ tacticty depend on the cristalline form of the catalyst. 
+\end{frame}
+
+\begin{frame}{Major PO made by ZN catalyst}
+    \begin{minipage}{0.45\textwidth}
+        \begin{block}{PE}
+            \begin{itemize}
+                \item HDPE   ($\xi_c = 0.9$ \& PDI = 3-5)
+                \item UHWPE  ($M_w = \pm 3 \times 10^6$ )
+                \item LLDPE (Ethylene copolymer with 5-12\% of $\alpha$-olefin)
+            \end{itemize}
+    \end{minipage}
+    \hfill
+     \begin{minipage}{0.45\textwidth}
+        \begin{block}{Isotactic PP}
+            \begin{itemize}
+                \item Soluble métaloscene catalyst
+                \item 99\% tacticity 
+            \end{itemize}
+    \end{minipage}
+
+\end{frame}
+
