@@ -1,0 +1,86 @@
+
+% ============================================================
+%  main.tex  –  François Clinquart  
+%  UCLouvain / École Polytechnique de Louvain
+%  Compile : make   (or latexmk main.tex)
+% ============================================================
+
+\documentclass{Styles/beamer-style}
+
+% ============================================================
+%  BIBLIOGRAPHY
+% ============================================================
+\addbibresource{References/references.bib}
+%
+% ============================================================
+%  PRESENTATION METADATA
+% ============================================================
+
+% Short author shown in the footline
+\author[F. Clinquart]{}
+
+% Full author list with affiliation superscripts
+\addauthor{F. Clinquart}{a}
+\addauthor{Pr E.Van Ruymbeke}{1}
+
+% Affiliations – one line each
+\addaffil{1}{Institute of Condensed Matter and Nanosciences - Bio \& Soft Matter (IMCN/BSMA), UCLouvain}
+
+% Corresponding author e-mail
+\setcontact{a}{francois.clinquart@student.uclouvain.be}
+
+% Title block
+\title{End of life challenges associatted with Polyoelefins (PO)}
+\subtitle{LMAPR2021}
+\date{19 March 2026}
+
+% ============================================================
+\begin{document}
+
+% ============================================================
+%  TITLE SLIDE
+% ============================================================
+\begin{frame}[plain, noframenumbering]
+    \titlepage
+\end{frame}
+
+% ============================================================
+%  TABLE OF CONTENTS
+% ============================================================
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% ============================================================
+\section[Introduction]{introduction}
+    \input{Sections/introduction.tex}
+\section[Reactivity]{reactivity of Alkene and Polyalkene}
+    \input{Sections/reactivity.tex}
+\section[End of Life]{Challenges with End of Life}
+    \input{Sections/EoL.tex}
+\section[Conclusion]{Conclusion and Outlook}
+    \input{Sections/conclusion.tex}
+% ============================================================
+%  THANK-YOU SLIDE  (outside sections → invisible in TOC/header)
+% ============================================================
+\thanksframe[Do you have any questions ?]
+
+% ============================================================
+%  BIBLIOGRAPHY
+%  - allowframebreaks : splits automatically over multiple slides
+%    if there are many references
+%  - heading=none     : suppresses the bold "References" title
+%    inside the frame (the frametitle already serves as header)
+% ============================================================
+\begin{frame}[allowframebreaks, noframenumbering]{Bibliography}
+    \printbibliography[heading=none]
+\end{frame}
+
+% ============================================================
+%  APPENDICES  (optional – uncomment when needed)
+%  Slides are numbered i, ii, iii … and excluded from TOC
+% ============================================================
+% \appendix
+
+
+\end{document}
