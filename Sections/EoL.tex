@@ -6,16 +6,30 @@
 
 \begin{frame}{End of life route}
     \begin{itemize}
-        \item No Biodegradability 
-        \item No chemical recycling : Polymerization always $\Delta G < 0$ 
-        \item Mechanical recycling
-        \item Mismanagement
-        \item Thermo-degradation to form fuel \cite{jubinville_comprehensive_2020}. 
+        \item Mismanagement  \textcolor{red}{KO}
+        \item Mechanical recycling (MR) \textcolor{orange}{OK}
+        \item Biodegradability \textcolor{red}{KO}
+        \item Chemical recycling (CR)\textcolor{orange}{OK (TRL low)}
+            \begin{itemize}
+                \item catalytic upcycling strategies (hydrogenolysis, (hydro)cracking, tandem processes involving metathesis, and selective oxidation) \cite{garland2024catalytic}  \textcolor{orange}{OK}
+                \item Pyrolysis (Thermal/Catalytic Cracking) \cite{fraczak_chemical_2021}: Naphta \textcolor{green}{OK}
+                \item Gasification (production of syngas) \textcolor{orange}{OK}
+                \item Depolylmerization PE to PP \textcolor{orange}{OK}
+            \end{itemize}
+
+        \item Energy recovery \textcolor{orange}{OK}
+            \begin{itemize}
+                \item Incineration \textcolor{green}{OK}
+                \item Pyrolysis (Thermal/Catalytic Cracking) : fuel \textcolor{green}{OK}
+                \item Gasification (production of syngas) \textcolor{orange}{OK}
+            \end{itemize}
+        
+        
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{What happens to the polymer structure ? }
+    \frametitle{MR : What happens to the polymer structure ? }
     According to \textcite{ragaert_mechanical_2017} :
     \begin{block}{}
         \begin{enumerate}
@@ -48,61 +62,84 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Polyolefins behave very differently during mechanical recycling.}
-    \begin{minipage}{0.45\textwidth}
+    \frametitle{MR :Polyolefins behave very differently during mechanical recycling.}
+
 \begin{figure}
-    \includegraphics[width=0.8\textwidth]{Figures/polyolefin.png}
-    \caption{General reaction scheme of polyolefins undergoing extrusion.}
+    \includegraphics[width=0.4\textwidth]{Figures/polyolefin.png}
+    \caption{General reaction scheme of polyolefins undergoing extrusion \cite{ragaert_mechanical_2017}.}
 \end{figure}
-\end{minipage}
-\hfill
-\begin{minipage}{0.45\textwidth}
-\begin{figure}
-    \includegraphics[width=0.8\textwidth]{Figures/complex_viscosity.png}
-    \caption{Complex viscosity versus number of extrusion cycles.}
-\end{figure}
-\end{minipage}
 
 \end{frame}
 
 
-\begin{frame}{Effect of Recycling on Polyolefin Properties}
+\begin{frame}{MR :Effect of Recycling on Polyolefin Properties}
     \begin{table}[h]
         \centering
-        \small
         \begin{tabular}{l c c c}
             \toprule
             \textbf{Property} & \textbf{Typical Effect} & \textbf{HDPE} & \textbf{PP} \\
             \midrule
-            Molecular Weight & ↓ (chain scission) & vary & ↓ Significant \\
-            PDI & Changes & ↑ Increases & ↓ Decreases \\
-            Tensile Strength & ↓ Loss & 10-30\% & 10-30\% \\
-            Crystallinity & ↓ Loss & 5-10\% & 5-10\% \\
-            Melt Flow Index (MFI) & ↑ Increases & More fluid & More fluid \\
-            ESCR & ↓ Loss & 60\% reduction & — \\
+            Molecular Weight  & $\downarrow$ (chain scission) & vary              & $\downarrow$ Significant \\
+            PDI               & Changes                       & $\uparrow$        & $\downarrow$ \\
+            Tensile Strength  & $\downarrow$ Loss             & 10--30\%          & 10--30\% \\
+            Crystallinity     & $\downarrow$ Loss             & 5--10\%           & 5--10\% \\
             \bottomrule
         \end{tabular}
-        \caption*{Loss of properties \cite{jubinville_comprehensive_2020} \small ESCR: Environmental Stress Crack Resistance}
+        \caption*{Loss of properties \cite{jubinville_comprehensive_2020}}
     \end{table}
 \end{frame}
 
-\begin{frame}{Pyrolysis}
-    making oil 
+
+
+\begin{frame}{MR/CR :Sorting problem + PE/PP blend}
+    \begin{block}{PE/PP overlap}
+         \begin{itemize}
+            \item PP/PE have $\pm$ same $\rho$
+            \item PP/PE have same optical properties 
+            \item immiscibile
+         \end{itemize}
+
+    \end{block}
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.3\textwidth]{Figures/13_imiscibilty.png}
+        \caption{TEM image : PP crystal into LDPE \cite{shanks_polypropylenepolyethylene_2000}.}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{Chemical recycling}
-    need catalyst and not mature
+
+\begin{frame}{CR : main hurdles}
+    \begin{greenblock}{TRL levels}
+        \begin{itemize}
+            \item Pyrolysis (TRL +++) \cite{fraczak_chemical_2021}
+            \item Gazefication (TRL ++) \cite{fraczak_chemical_2021}
+            \item Depolymerization (TRL+) \cite{garland2024catalytic}
+        \end{itemize}
+    \end{greenblock}
+    \begin{block}{Main hurdles}
+        \begin{itemize}
+            \item High energy consumption
+            \begin{itemize}
+                \item Brent Crude $\approx 110.4$ \$/barrel
+                \item Carbon Tax
+            \end{itemize}
+            \item Sorting
+            \begin{itemize}
+                \item Catalyst poisoning
+            \end{itemize}
+            \item Lack of infrastructure (Indaver P2C Antwerp)
+        \end{itemize}
+    \end{block}
 \end{frame}
 
-\begin{frame}{Sorting problem}
-
+\begin{frame}{Others challenges and perspectives}
+    \begin{block}{Key processing constraints for mechanically rPE}
+        \begin{itemize}
+            \item Tolerance to contaminants depends on the process (thin films less forgiving).
+            \item Common contaminants: paper fibre, other polymers, rubber.
+            \item Branched gels in rPE limit stretchability.
+            \item Optical quality: many rPE grades are greyish vs.\ virgin PE.
+            \item regulation for food grade. 
+        \end{itemize}
+    \end{block}
 \end{frame}
-
-\begin{frame}{PE/PP blend}
-
-\end{frame}
-
-\begin{frame}{Too many grades}
-
-\end{frame}
-
